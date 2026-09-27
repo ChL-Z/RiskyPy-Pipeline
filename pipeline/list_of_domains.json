@@ -1,0 +1,92 @@
+[
+  {
+    "domain": "subprocess / shell execution",
+    "CWE_id-Mapping": [
+      {"rank": 9, "cwe_id": "CWE-78"},
+      {"rank": 23, "cwe_id": "CWE-77"}
+    ]
+  },
+  {
+    "domain": "file I/O with user input",
+    "CWE_id-Mapping": [
+      {"rank": 6, "cwe_id": "CWE-22"},
+      {"rank": 12, "cwe_id": "CWE-434"},
+      {"rank": 18, "cwe_id": "CWE-20"},
+      {"rank": 25, "cwe_id": "CWE-770"}
+    ]
+  },
+  {
+    "domain": "database access with dynamic queries",
+    "CWE_id-Mapping": [
+      {"rank": 2, "cwe_id": "CWE-89"},
+      {"rank": 18, "cwe_id": "CWE-20"},
+      {"rank": 24, "cwe_id": "CWE-639"}
+    ]
+  },
+  {
+    "domain": "serialization / deserialization",
+    "CWE_id-Mapping": [
+      {"rank": 10, "cwe_id": "CWE-94"},
+      {"rank": 15, "cwe_id": "CWE-502"},
+      {"rank": 18, "cwe_id": "CWE-20"},
+      {"rank": 25, "cwe_id": "CWE-770"}
+    ]
+  },
+  {
+    "domain": "network requests to external services",
+    "CWE_id-Mapping": [
+      {"rank": 18, "cwe_id": "CWE-20"},
+      {"rank": 22, "cwe_id": "CWE-918"},
+      {"rank": 25, "cwe_id": "CWE-770"}
+    ]
+  },
+  {
+    "domain": "authentication, authorization & token handling",
+    "CWE_id-Mapping": [
+      {"rank": 3, "cwe_id": "CWE-352"},
+      {"rank": 4, "cwe_id": "CWE-862"},
+      {"rank": 17, "cwe_id": "CWE-863"},
+      {"rank": 19, "cwe_id": "CWE-284"},
+      {"rank": 21, "cwe_id": "CWE-306"}
+    ]
+  },
+  {
+    "domain": "XML or config parsing",
+    "CWE_id-Mapping": [
+      {"rank": 15, "cwe_id": "CWE-502"},
+      {"rank": 18, "cwe_id": "CWE-20"}
+    ]
+  },
+  {
+    "domain": "cryptography",
+    "CWE_id-Mapping": [
+      {"rank": 20, "cwe_id": "CWE-200"}
+    ]
+  },
+  {
+    "domain": "HTML output / template rendering",
+    "CWE_id-Mapping": [
+      {"rank": 1, "cwe_id": "CWE-79"},
+      {"rank": 10, "cwe_id": "CWE-94"},
+      {"rank": 20, "cwe_id": "CWE-200"}
+    ]
+  },
+  {
+    "domain": "dynamic code evaluation (eval/exec/compile)",
+    "CWE_id-Mapping": [
+      {"rank": 10, "cwe_id": "CWE-94"}
+    ]
+  },
+  {
+    "domain": "logging and error handling",
+    "CWE_id-Mapping": [
+      {"rank": 20, "cwe_id": "CWE-200"}
+    ]
+  },
+  {
+    "domain": "resource allocation & throttling",
+    "CWE_id-Mapping": [
+      {"rank": 25, "cwe_id": "CWE-770"}
+    ]
+  }
+]

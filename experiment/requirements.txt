@@ -1,0 +1,13 @@
+# Code generation with Hugging Face models (run_experiment.py)
+torch>=2.6.0
+transformers==4.51.3
+accelerate>=1.6.0
+tqdm>=4.66.0
+
+# Static analysis (BANDIT-REFINE and evaluate_runs.py)
+bandit==1.9.4
+semgrep==1.178.0
+
+# Evaluation (evaluate_runs.py)
+openai==2.8.0
+matplotlib>=3.7.0

@@ -1,0 +1,15 @@
+# Generation pipeline (pipeline/, benchmark/) and static analysis
+openai>=1.50.0
+bandit>=1.7.7
+semgrep>=1.50.0
+numpy>=1.26.0
+
+# Local model inference for evaluation/test_datasets_on_coding_llms.py
+torch>=2.2.0
+transformers>=4.44.0
+
+# Plotting for evaluation/compute_dataset_lengths.py (length distribution figures)
+matplotlib>=3.7.0
+
+# Note: the `semgrep` CLI must also be available on PATH (installed by the
+# semgrep package above). The pipeline aborts at startup if it is missing.

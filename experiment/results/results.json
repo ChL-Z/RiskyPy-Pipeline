@@ -1,0 +1,229 @@
+{
+  "runs": [
+    {
+      "file": "Qwen3-4B-Instruct-2507__baseline.json",
+      "model": "Qwen/Qwen3-4B-Instruct-2507",
+      "approach": "baseline",
+      "generations": 73,
+      "bandit": {
+        "secure_generations": 9,
+        "secure_percentage": 12.33,
+        "total_findings": 154,
+        "findings_by_cwe": {
+          "CWE-20": 68,
+          "CWE-78": 51,
+          "CWE-400": 12,
+          "CWE-502": 6,
+          "CWE-89": 6,
+          "CWE-703": 5,
+          "CWE-327": 3,
+          "CWE-330": 1,
+          "CWE-259": 1,
+          "CWE-22": 1
+        }
+      },
+      "semgrep": {
+        "secure_generations": 20,
+        "secure_percentage": 27.4,
+        "total_findings": 110,
+        "findings_by_cwe": {
+          "CWE-611": 54,
+          "CWE-78": 30,
+          "CWE-95": 16,
+          "CWE-502": 6,
+          "CWE-327": 3,
+          "CWE-939": 1
+        }
+      },
+      "functionality": {
+        "functional_generations": 42,
+        "functional_percentage": 57.53,
+        "judge_errors": 0
+      }
+    },
+    {
+      "file": "Qwen3-4B-Instruct-2507__bandit_refine.json",
+      "model": "Qwen/Qwen3-4B-Instruct-2507",
+      "approach": "bandit_refine",
+      "generations": 73,
+      "bandit": {
+        "secure_generations": 44,
+        "secure_percentage": 60.27,
+        "total_findings": 46,
+        "findings_by_cwe": {
+          "CWE-78": 34,
+          "CWE-703": 5,
+          "CWE-327": 3,
+          "CWE-89": 2,
+          "CWE-20": 1,
+          "CWE-22": 1
+        }
+      },
+      "semgrep": {
+        "secure_generations": 50,
+        "secure_percentage": 68.49,
+        "total_findings": 28,
+        "findings_by_cwe": {
+          "CWE-78": 13,
+          "CWE-95": 9,
+          "CWE-327": 3,
+          "CWE-611": 2,
+          "CWE-939": 1
+        }
+      },
+      "functionality": {
+        "functional_generations": 25,
+        "functional_percentage": 34.25,
+        "judge_errors": 0
+      }
+    },
+    {
+      "file": "Qwen3-4B-Instruct-2507__self_feedback.json",
+      "model": "Qwen/Qwen3-4B-Instruct-2507",
+      "approach": "self_feedback",
+      "generations": 73,
+      "bandit": {
+        "secure_generations": 21,
+        "secure_percentage": 28.77,
+        "total_findings": 119,
+        "findings_by_cwe": {
+          "CWE-20": 65,
+          "CWE-78": 43,
+          "CWE-89": 4,
+          "CWE-400": 2,
+          "CWE-259": 1,
+          "CWE-22": 1,
+          "CWE-703": 1,
+          "CWE-605": 1,
+          "CWE-327": 1
+        }
+      },
+      "semgrep": {
+        "secure_generations": 25,
+        "secure_percentage": 34.25,
+        "total_findings": 83,
+        "findings_by_cwe": {
+          "CWE-611": 56,
+          "CWE-78": 14,
+          "CWE-95": 10,
+          "CWE-319": 1,
+          "CWE-939": 1,
+          "CWE-327": 1
+        }
+      },
+      "functionality": {
+        "functional_generations": 9,
+        "functional_percentage": 12.33,
+        "judge_errors": 0
+      }
+    },
+    {
+      "file": "Seed-Coder-8B-Instruct__baseline.json",
+      "model": "ByteDance-Seed/Seed-Coder-8B-Instruct",
+      "approach": "baseline",
+      "generations": 73,
+      "bandit": {
+        "secure_generations": 1,
+        "secure_percentage": 1.37,
+        "total_findings": 165,
+        "findings_by_cwe": {
+          "CWE-20": 67,
+          "CWE-78": 49,
+          "CWE-400": 18,
+          "CWE-502": 14,
+          "CWE-22": 9,
+          "CWE-89": 6,
+          "CWE-259": 2
+        }
+      },
+      "semgrep": {
+        "secure_generations": 13,
+        "secure_percentage": 17.81,
+        "total_findings": 127,
+        "findings_by_cwe": {
+          "CWE-611": 62,
+          "CWE-78": 27,
+          "CWE-95": 15,
+          "CWE-502": 14,
+          "CWE-939": 9
+        }
+      },
+      "functionality": {
+        "functional_generations": 53,
+        "functional_percentage": 72.6,
+        "judge_errors": 0
+      }
+    },
+    {
+      "file": "Seed-Coder-8B-Instruct__bandit_refine.json",
+      "model": "ByteDance-Seed/Seed-Coder-8B-Instruct",
+      "approach": "bandit_refine",
+      "generations": 73,
+      "bandit": {
+        "secure_generations": 43,
+        "secure_percentage": 58.9,
+        "total_findings": 55,
+        "findings_by_cwe": {
+          "CWE-78": 37,
+          "CWE-22": 9,
+          "CWE-502": 6,
+          "CWE-89": 3
+        }
+      },
+      "semgrep": {
+        "secure_generations": 52,
+        "secure_percentage": 71.23,
+        "total_findings": 31,
+        "findings_by_cwe": {
+          "CWE-78": 11,
+          "CWE-939": 9,
+          "CWE-502": 8,
+          "CWE-95": 3
+        }
+      },
+      "functionality": {
+        "functional_generations": 31,
+        "functional_percentage": 42.47,
+        "judge_errors": 0
+      }
+    },
+    {
+      "file": "Seed-Coder-8B-Instruct__self_feedback.json",
+      "model": "ByteDance-Seed/Seed-Coder-8B-Instruct",
+      "approach": "self_feedback",
+      "generations": 73,
+      "bandit": {
+        "secure_generations": 9,
+        "secure_percentage": 12.33,
+        "total_findings": 153,
+        "findings_by_cwe": {
+          "CWE-20": 81,
+          "CWE-78": 44,
+          "CWE-502": 10,
+          "CWE-400": 8,
+          "CWE-22": 6,
+          "CWE-89": 3,
+          "CWE-259": 1
+        }
+      },
+      "semgrep": {
+        "secure_generations": 21,
+        "secure_percentage": 28.77,
+        "total_findings": 102,
+        "findings_by_cwe": {
+          "CWE-611": 65,
+          "CWE-78": 11,
+          "CWE-502": 10,
+          "CWE-95": 9,
+          "CWE-939": 6,
+          "CWE-319": 1
+        }
+      },
+      "functionality": {
+        "functional_generations": 27,
+        "functional_percentage": 36.99,
+        "judge_errors": 0
+      }
+    }
+  ]
+}
