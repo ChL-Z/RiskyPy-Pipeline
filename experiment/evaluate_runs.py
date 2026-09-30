@@ -1,7 +1,7 @@
 # Evaluates the code generation runs saved in runs/ with Bandit, Semgrep and the
 # functionality LLM judge of the RiskyPy pipeline (same settings, rules, prompt,
-# model and parameters). Writes per-run statistics to results/results.json and a
-# grouped bar chart to results/results.png.
+# model and parameters). Writes per-run statistics to results/results.json, a grouped
+# bar chart to results/results.png and every judge decision to results/judgments.json.
 # Requires the OPENAI_API_KEY environment variable and the semgrep CLI on PATH.
 
 import json
@@ -223,7 +223,7 @@ def judge_code_functionality(prompt_text: str, code_str: str) -> Optional[dict[s
 
 def evaluate_generation(prompt_text: str, code: str) -> dict[str, Any]:
     """Return the Bandit findings, Semgrep findings and functionality judgement of one generation.
-    is_functional is None when the judge fails (error or malformed response)."""
+    is_functional and reasoning are None when the judge fails (error or malformed response)."""
     try:
         judgment = judge_code_functionality(prompt_text, code)
     except Exception as e:
@@ -233,6 +233,7 @@ def evaluate_generation(prompt_text: str, code: str) -> dict[str, Any]:
         "bandit": run_bandit(code),
         "semgrep": run_semgrep(code),
         "is_functional": None if judgment is None else judgment["is_functional"],
+        "reasoning": None if judgment is None else judgment["reasoning"],
     }
 
 
@@ -335,10 +336,19 @@ def main() -> None:
         evaluations[i].append(future.result())
 
     stats = [run_stats(name, run, evaluations[i]) for i, (name, run) in enumerate(runs)]
+    # Judge decision of every generation, with its prompt and code (None when the judge failed).
+    judgments = [
+        {"run_file": name, "model": run["model"], "approach": run["approach"], "index": g["index"],
+         "prompt": g["prompt"], "code": g["code"],
+         "is_functional": e["is_functional"], "reasoning": e["reasoning"]}
+        for i, (name, run) in enumerate(runs) for g, e in zip(run["generations"], evaluations[i])
+    ]
     RESULTS_DIR.mkdir(exist_ok=True)
     (RESULTS_DIR / "results.json").write_text(json.dumps({"runs": stats}, indent=2), encoding="utf-8")
+    (RESULTS_DIR / "judgments.json").write_text(
+        json.dumps({"judgments": judgments}, indent=2, ensure_ascii=False), encoding="utf-8")
     plot_results(stats, RESULTS_DIR / "results.png")
-    print(f"Saved {RESULTS_DIR / 'results.json'} and {RESULTS_DIR / 'results.png'}")
+    print(f"Saved {RESULTS_DIR / 'results.json'}, {RESULTS_DIR / 'judgments.json'} and {RESULTS_DIR / 'results.png'}")
 
 
 if __name__ == "__main__":

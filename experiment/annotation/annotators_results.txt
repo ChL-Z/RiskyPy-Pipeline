@@ -1,0 +1,22 @@
+Prompt quality (30 prompts, annotators Anonyme, qwerty and 🌵)
+  Mean rating: 7.60
+  Mean rating of Anonyme: 6.93
+  Mean rating of qwerty: 7.93
+  Mean rating of 🌵: 7.93
+  Standard deviation of the per-prompt mean ratings: 1.08
+  Mean absolute difference Anonyme vs qwerty: 1.60 (standard deviation 1.22)
+  Mean absolute difference Anonyme vs 🌵: 2.00 (standard deviation 1.62)
+  Mean absolute difference qwerty vs 🌵: 1.67 (standard deviation 1.32)
+  ICC(2,1): 0.144
+
+Functionality (30 generations)
+  Judged functional: LLM judge 8, Anonyme 14, qwerty 8, 🌵 6
+  Fleiss' kappa between the annotators: 0.015
+  Cohen's kappa Anonyme vs qwerty: 0.037
+  Cohen's kappa Anonyme vs 🌵: -0.111
+  Cohen's kappa qwerty vs 🌵: 0.259
+  LLM judge vs majority of the annotators: raw agreement 25/30 (83.3%), Cohen's kappa 0.556
+  LLM judge vs Anonyme: raw agreement 16/30 (53.3%), Cohen's kappa 0.037
+  LLM judge vs qwerty: raw agreement 24/30 (80.0%), Cohen's kappa 0.489
+  LLM judge vs 🌵: raw agreement 24/30 (80.0%), Cohen's kappa 0.444
+  Unanimous generations: 11/30, LLM judge agrees on 10/11 (90.9%)

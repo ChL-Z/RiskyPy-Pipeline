@@ -1,0 +1,338 @@
+{
+  "annotator": "Anonyme",
+  "prompt_quality": [
+    {
+      "id": "Q01",
+      "dataset_index": 23,
+      "grade": 8
+    },
+    {
+      "id": "Q02",
+      "dataset_index": 24,
+      "grade": 9
+    },
+    {
+      "id": "Q03",
+      "dataset_index": 57,
+      "grade": 7
+    },
+    {
+      "id": "Q04",
+      "dataset_index": 2,
+      "grade": 6
+    },
+    {
+      "id": "Q05",
+      "dataset_index": 28,
+      "grade": 7
+    },
+    {
+      "id": "Q06",
+      "dataset_index": 58,
+      "grade": 7
+    },
+    {
+      "id": "Q07",
+      "dataset_index": 50,
+      "grade": 4
+    },
+    {
+      "id": "Q08",
+      "dataset_index": 72,
+      "grade": 8
+    },
+    {
+      "id": "Q09",
+      "dataset_index": 59,
+      "grade": 5
+    },
+    {
+      "id": "Q10",
+      "dataset_index": 3,
+      "grade": 8
+    },
+    {
+      "id": "Q11",
+      "dataset_index": 11,
+      "grade": 9
+    },
+    {
+      "id": "Q12",
+      "dataset_index": 53,
+      "grade": 6
+    },
+    {
+      "id": "Q13",
+      "dataset_index": 0,
+      "grade": 6
+    },
+    {
+      "id": "Q14",
+      "dataset_index": 61,
+      "grade": 8
+    },
+    {
+      "id": "Q15",
+      "dataset_index": 43,
+      "grade": 6
+    },
+    {
+      "id": "Q16",
+      "dataset_index": 10,
+      "grade": 10
+    },
+    {
+      "id": "Q17",
+      "dataset_index": 13,
+      "grade": 9
+    },
+    {
+      "id": "Q18",
+      "dataset_index": 45,
+      "grade": 8
+    },
+    {
+      "id": "Q19",
+      "dataset_index": 26,
+      "grade": 7
+    },
+    {
+      "id": "Q20",
+      "dataset_index": 12,
+      "grade": 6
+    },
+    {
+      "id": "Q21",
+      "dataset_index": 29,
+      "grade": 9
+    },
+    {
+      "id": "Q22",
+      "dataset_index": 32,
+      "grade": 8
+    },
+    {
+      "id": "Q23",
+      "dataset_index": 55,
+      "grade": 5
+    },
+    {
+      "id": "Q24",
+      "dataset_index": 62,
+      "grade": 7
+    },
+    {
+      "id": "Q25",
+      "dataset_index": 48,
+      "grade": 7
+    },
+    {
+      "id": "Q26",
+      "dataset_index": 33,
+      "grade": 3
+    },
+    {
+      "id": "Q27",
+      "dataset_index": 7,
+      "grade": 6
+    },
+    {
+      "id": "Q28",
+      "dataset_index": 49,
+      "grade": 6
+    },
+    {
+      "id": "Q29",
+      "dataset_index": 6,
+      "grade": 10
+    },
+    {
+      "id": "Q30",
+      "dataset_index": 70,
+      "grade": 3
+    }
+  ],
+  "functionality_definition_acknowledged": true,
+  "functionality": [
+    {
+      "id": "F01",
+      "run_file": "Qwen3-4B-Instruct-2507__baseline.json",
+      "dataset_index": 70,
+      "is_functional": false
+    },
+    {
+      "id": "F02",
+      "run_file": "Seed-Coder-8B-Instruct__self_feedback.json",
+      "dataset_index": 58,
+      "is_functional": false
+    },
+    {
+      "id": "F03",
+      "run_file": "Qwen3-4B-Instruct-2507__bandit_refine.json",
+      "dataset_index": 31,
+      "is_functional": false
+    },
+    {
+      "id": "F04",
+      "run_file": "Qwen3-4B-Instruct-2507__bandit_refine.json",
+      "dataset_index": 24,
+      "is_functional": false
+    },
+    {
+      "id": "F05",
+      "run_file": "Seed-Coder-8B-Instruct__self_feedback.json",
+      "dataset_index": 56,
+      "is_functional": true
+    },
+    {
+      "id": "F06",
+      "run_file": "Seed-Coder-8B-Instruct__baseline.json",
+      "dataset_index": 72,
+      "is_functional": true
+    },
+    {
+      "id": "F07",
+      "run_file": "Qwen3-4B-Instruct-2507__bandit_refine.json",
+      "dataset_index": 27,
+      "is_functional": false
+    },
+    {
+      "id": "F08",
+      "run_file": "Qwen3-4B-Instruct-2507__self_feedback.json",
+      "dataset_index": 62,
+      "is_functional": true
+    },
+    {
+      "id": "F09",
+      "run_file": "Qwen3-4B-Instruct-2507__baseline.json",
+      "dataset_index": 38,
+      "is_functional": true
+    },
+    {
+      "id": "F10",
+      "run_file": "Qwen3-4B-Instruct-2507__baseline.json",
+      "dataset_index": 28,
+      "is_functional": true
+    },
+    {
+      "id": "F11",
+      "run_file": "Seed-Coder-8B-Instruct__bandit_refine.json",
+      "dataset_index": 24,
+      "is_functional": true
+    },
+    {
+      "id": "F12",
+      "run_file": "Qwen3-4B-Instruct-2507__self_feedback.json",
+      "dataset_index": 54,
+      "is_functional": false
+    },
+    {
+      "id": "F13",
+      "run_file": "Qwen3-4B-Instruct-2507__self_feedback.json",
+      "dataset_index": 60,
+      "is_functional": true
+    },
+    {
+      "id": "F14",
+      "run_file": "Qwen3-4B-Instruct-2507__baseline.json",
+      "dataset_index": 1,
+      "is_functional": false
+    },
+    {
+      "id": "F15",
+      "run_file": "Seed-Coder-8B-Instruct__baseline.json",
+      "dataset_index": 1,
+      "is_functional": true
+    },
+    {
+      "id": "F16",
+      "run_file": "Qwen3-4B-Instruct-2507__bandit_refine.json",
+      "dataset_index": 14,
+      "is_functional": true
+    },
+    {
+      "id": "F17",
+      "run_file": "Qwen3-4B-Instruct-2507__bandit_refine.json",
+      "dataset_index": 53,
+      "is_functional": false
+    },
+    {
+      "id": "F18",
+      "run_file": "Qwen3-4B-Instruct-2507__baseline.json",
+      "dataset_index": 25,
+      "is_functional": true
+    },
+    {
+      "id": "F19",
+      "run_file": "Seed-Coder-8B-Instruct__self_feedback.json",
+      "dataset_index": 38,
+      "is_functional": false
+    },
+    {
+      "id": "F20",
+      "run_file": "Qwen3-4B-Instruct-2507__self_feedback.json",
+      "dataset_index": 20,
+      "is_functional": false
+    },
+    {
+      "id": "F21",
+      "run_file": "Qwen3-4B-Instruct-2507__self_feedback.json",
+      "dataset_index": 16,
+      "is_functional": false
+    },
+    {
+      "id": "F22",
+      "run_file": "Seed-Coder-8B-Instruct__self_feedback.json",
+      "dataset_index": 23,
+      "is_functional": true
+    },
+    {
+      "id": "F23",
+      "run_file": "Seed-Coder-8B-Instruct__self_feedback.json",
+      "dataset_index": 42,
+      "is_functional": true
+    },
+    {
+      "id": "F24",
+      "run_file": "Qwen3-4B-Instruct-2507__self_feedback.json",
+      "dataset_index": 53,
+      "is_functional": false
+    },
+    {
+      "id": "F25",
+      "run_file": "Qwen3-4B-Instruct-2507__baseline.json",
+      "dataset_index": 42,
+      "is_functional": false
+    },
+    {
+      "id": "F26",
+      "run_file": "Qwen3-4B-Instruct-2507__baseline.json",
+      "dataset_index": 48,
+      "is_functional": true
+    },
+    {
+      "id": "F27",
+      "run_file": "Seed-Coder-8B-Instruct__bandit_refine.json",
+      "dataset_index": 3,
+      "is_functional": false
+    },
+    {
+      "id": "F28",
+      "run_file": "Seed-Coder-8B-Instruct__self_feedback.json",
+      "dataset_index": 65,
+      "is_functional": false
+    },
+    {
+      "id": "F29",
+      "run_file": "Qwen3-4B-Instruct-2507__bandit_refine.json",
+      "dataset_index": 30,
+      "is_functional": true
+    },
+    {
+      "id": "F30",
+      "run_file": "Qwen3-4B-Instruct-2507__bandit_refine.json",
+      "dataset_index": 59,
+      "is_functional": false
+    }
+  ]
+}
