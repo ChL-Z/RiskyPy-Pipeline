@@ -1,0 +1,6 @@
+# Static analysis (joint_evaluation.py)
+bandit==1.9.4
+semgrep==1.178.0
+
+# Chart (joint_evaluation.py)
+matplotlib>=3.7.0

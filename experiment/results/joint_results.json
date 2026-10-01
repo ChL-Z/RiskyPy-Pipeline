@@ -1,0 +1,160 @@
+{
+  "runs": [
+    {
+      "file": "Qwen3-4B-Instruct-2507__baseline.json",
+      "model": "Qwen/Qwen3-4B-Instruct-2507",
+      "approach": "baseline",
+      "generations": 73,
+      "bandit_secure": {
+        "generations": 9,
+        "percentage": 12.33
+      },
+      "semgrep_secure": {
+        "generations": 20,
+        "percentage": 27.4
+      },
+      "functional": {
+        "generations": 44,
+        "percentage": 60.27
+      },
+      "functional_and_bandit_secure": {
+        "generations": 5,
+        "percentage": 6.85
+      },
+      "functional_and_semgrep_secure": {
+        "generations": 11,
+        "percentage": 15.07
+      }
+    },
+    {
+      "file": "Qwen3-4B-Instruct-2507__bandit_refine.json",
+      "model": "Qwen/Qwen3-4B-Instruct-2507",
+      "approach": "bandit_refine",
+      "generations": 73,
+      "bandit_secure": {
+        "generations": 44,
+        "percentage": 60.27
+      },
+      "semgrep_secure": {
+        "generations": 50,
+        "percentage": 68.49
+      },
+      "functional": {
+        "generations": 26,
+        "percentage": 35.62
+      },
+      "functional_and_bandit_secure": {
+        "generations": 21,
+        "percentage": 28.77
+      },
+      "functional_and_semgrep_secure": {
+        "generations": 21,
+        "percentage": 28.77
+      }
+    },
+    {
+      "file": "Qwen3-4B-Instruct-2507__self_feedback.json",
+      "model": "Qwen/Qwen3-4B-Instruct-2507",
+      "approach": "self_feedback",
+      "generations": 73,
+      "bandit_secure": {
+        "generations": 21,
+        "percentage": 28.77
+      },
+      "semgrep_secure": {
+        "generations": 25,
+        "percentage": 34.25
+      },
+      "functional": {
+        "generations": 11,
+        "percentage": 15.07
+      },
+      "functional_and_bandit_secure": {
+        "generations": 2,
+        "percentage": 2.74
+      },
+      "functional_and_semgrep_secure": {
+        "generations": 1,
+        "percentage": 1.37
+      }
+    },
+    {
+      "file": "Seed-Coder-8B-Instruct__baseline.json",
+      "model": "ByteDance-Seed/Seed-Coder-8B-Instruct",
+      "approach": "baseline",
+      "generations": 73,
+      "bandit_secure": {
+        "generations": 1,
+        "percentage": 1.37
+      },
+      "semgrep_secure": {
+        "generations": 13,
+        "percentage": 17.81
+      },
+      "functional": {
+        "generations": 59,
+        "percentage": 80.82
+      },
+      "functional_and_bandit_secure": {
+        "generations": 0,
+        "percentage": 0.0
+      },
+      "functional_and_semgrep_secure": {
+        "generations": 8,
+        "percentage": 10.96
+      }
+    },
+    {
+      "file": "Seed-Coder-8B-Instruct__bandit_refine.json",
+      "model": "ByteDance-Seed/Seed-Coder-8B-Instruct",
+      "approach": "bandit_refine",
+      "generations": 73,
+      "bandit_secure": {
+        "generations": 43,
+        "percentage": 58.9
+      },
+      "semgrep_secure": {
+        "generations": 52,
+        "percentage": 71.23
+      },
+      "functional": {
+        "generations": 33,
+        "percentage": 45.21
+      },
+      "functional_and_bandit_secure": {
+        "generations": 25,
+        "percentage": 34.25
+      },
+      "functional_and_semgrep_secure": {
+        "generations": 29,
+        "percentage": 39.73
+      }
+    },
+    {
+      "file": "Seed-Coder-8B-Instruct__self_feedback.json",
+      "model": "ByteDance-Seed/Seed-Coder-8B-Instruct",
+      "approach": "self_feedback",
+      "generations": 73,
+      "bandit_secure": {
+        "generations": 9,
+        "percentage": 12.33
+      },
+      "semgrep_secure": {
+        "generations": 21,
+        "percentage": 28.77
+      },
+      "functional": {
+        "generations": 19,
+        "percentage": 26.03
+      },
+      "functional_and_bandit_secure": {
+        "generations": 3,
+        "percentage": 4.11
+      },
+      "functional_and_semgrep_secure": {
+        "generations": 7,
+        "percentage": 9.59
+      }
+    }
+  ]
+}
